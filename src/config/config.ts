@@ -1,7 +1,7 @@
 import { Sequelize } from "sequelize";
 
 export const db = new Sequelize(
-  'file-app',
+  'tutorial',
   'root',
   'NEW_USER_PASSWORD',
   {
@@ -9,3 +9,5 @@ export const db = new Sequelize(
       port:3001
   }
 );
+
+export const PORT:number = 3000
