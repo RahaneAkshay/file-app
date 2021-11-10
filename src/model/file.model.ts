@@ -1,12 +1,12 @@
 import { Model,  DataTypes } from "sequelize";
 import { db } from "../config/config";
 
-interface FileAttributes {
-  id: number;
+export interface FileAttributes {
+  
   transaction_id: string;
-  amount:number;
+  amount:string;
   currency_code:string;
-  transaction_date:Date;
+  transaction_date:string;
   status:string
   
 }
@@ -14,27 +14,22 @@ interface FileAttributes {
 export class Files extends Model<FileAttributes> {}
 
 Files.init({
-    id:{
-        type:DataTypes.INTEGER,
-        primaryKey:true,
-        allowNull:false,
-        autoIncrement:true
-    },
-
+  
     transaction_id:{
-        type:DataTypes.STRING(50),
+        type:DataTypes.STRING,
         allowNull:false,
+        primaryKey:true
     
     },
     amount:{
-        type:DataTypes.DECIMAL
+        type:DataTypes.STRING
     },
     currency_code:{
         type:DataTypes.STRING
         
     },
     transaction_date:{
-        type:DataTypes.DATE
+        type:DataTypes.STRING
     },
     status:{
         type:DataTypes.STRING

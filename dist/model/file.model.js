@@ -7,24 +7,19 @@ class Files extends sequelize_1.Model {
 }
 exports.Files = Files;
 Files.init({
-    id: {
-        type: sequelize_1.DataTypes.INTEGER,
-        primaryKey: true,
-        allowNull: false,
-        autoIncrement: true
-    },
     transaction_id: {
-        type: sequelize_1.DataTypes.STRING(50),
+        type: sequelize_1.DataTypes.STRING,
         allowNull: false,
+        primaryKey: true
     },
     amount: {
-        type: sequelize_1.DataTypes.DECIMAL
+        type: sequelize_1.DataTypes.STRING
     },
     currency_code: {
         type: sequelize_1.DataTypes.STRING
     },
     transaction_date: {
-        type: sequelize_1.DataTypes.DATE
+        type: sequelize_1.DataTypes.STRING
     },
     status: {
         type: sequelize_1.DataTypes.STRING

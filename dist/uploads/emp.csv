@@ -1,0 +1,6 @@
+transaction_id,amount,currency_code,transaction_date,status
+"Invoice0000001","1,000.00","USD",20/02/2019 12:33:16,"Approved"
+"Invoice0000002","2,000.00","USD",21/02/2019 12:33:16,"Failed"
+"Invoice0000003","3,000.00","USD",22/02/2019 12:33:16,"Finished"
+"Invoice0000004","4,000.00","USD",23/02/2019 12:33:16,"Approved"
+

@@ -1,7 +1,7 @@
 import { Sequelize } from "sequelize";
 
 export const db = new Sequelize(
-  'tutorial',
+  'book_shop',
   'root',
   'NEW_USER_PASSWORD',
   {
